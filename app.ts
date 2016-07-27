@@ -15,9 +15,8 @@ import * as Vue from "vue"
     </div>
   `
 })
-class App {
+class App extends Vue{
   msg: string;
-  $dispatch: any;
 
   // return initial data
   data () {
