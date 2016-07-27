@@ -52,7 +52,6 @@ new Vue({
         app: App
     },
     ready: function(){
-        this.$dispatch("setTitle")
         this.$on("setTitle", (title)=>{
             this.title = title;
         })
