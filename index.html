@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        main{
+            margin: 3em;
+            padding: 1em;
+            background: #FCC;
+        }
+        .child{
+            margin: 1em;
+            padding: 1em;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Parent</h1>
+        <p>title: {{title}}</p>
+        <p>parentMsg: <input type="text" v-model="parentMsg"></p>
+        <app :parent-msg="parentMsg"></app>
+    </main>
+    <script src="bundle.js"></script>
+</body>
+</html>
